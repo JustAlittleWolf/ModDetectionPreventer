@@ -1,9 +1,12 @@
 <h1 style="text-align: center">Mod Detection Preventer</h1>
 
-A simple mod that prevents a security vulnerability allowing servers to detect which mods are installed on
-the client side.
+<p align="center">
+<img src="src/main/resources/assets/moddetectionpreventer/icon.png">
+</p>
 
-<img style="display: block; margin: 0 auto" src="src/main/resources/assets/moddetectionpreventer/icon.png" width="128" height="128">
+<p style="text-align: center">A simple mod that prevents a security vulnerability allowing servers to detect which mods are installed on
+the client side.</p>
+
 
 ## The Vulnerability
 
