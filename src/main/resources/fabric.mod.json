@@ -3,7 +3,7 @@
   "id": "moddetectionpreventer",
   "version": "${version}",
   "name": "ModDetectionPreventer",
-  "description": "Fixes a security vulnerability that allows servers to detect wether you have installed a mod or not.",
+  "description": "Fixes a security vulnerability that allows servers to detect what mods you have installed.",
   "authors": [
     "JustAlittleWolf"
   ],
