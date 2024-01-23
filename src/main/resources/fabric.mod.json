@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "moddetectionpreventer",
+  "version": "${version}",
+  "name": "ModDetectionPreventer",
+  "description": "Fixes a security vulnerability that allows servers to detect wether you have installed a mod or not.",
+  "authors": [
+    "JustAlittleWolf"
+  ],
+  "contact": {
+    "sources": "https://github.com/JustAlittleWolf/ModDetectionPreventer",
+    "issues": "https://github.com/JustAlittleWolf/ModDetectionPreventer/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/moddetectionpreventer/icon.png",
+  "environment": "client",
+  "mixins": [
+    "moddetectionpreventer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": ">=1.20.3 <=1.20.4"
+  }
+}

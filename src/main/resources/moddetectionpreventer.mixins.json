@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.wolfii.moddetectionpreventer.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "AbstractSignEditScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
