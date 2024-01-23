@@ -26,7 +26,7 @@ public class AbstractSignEditScreenMixin {
             if (KeybindFilter.isVanillaKeybinding(keybindTextContent.getKey())) {
                 filtered = MutableText.of(keybindTextContent);
             } else {
-                filtered = MutableText.of(new PlainTextContent.Literal(keybindTextContent.getKey()));
+                filtered = MutableText.of(new LiteralTextContent(keybindTextContent.getKey()));
             }
         } else {
             filtered = MutableText.of(message.getContent());
