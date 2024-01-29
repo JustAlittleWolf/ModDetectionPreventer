@@ -25,6 +25,8 @@ This detection method works for any mod, that has custom translations.
 This mod fixes this issue, by simply not resolving any translation or keybind placeholders on signs, except vanilla
 ones. This makes it impossible for the server to use this method to detect installed mods.
 
+To verify this works, you can test it in a [test world](https://github.com/JustAlittleWolf/ModDetectionPreventer/raw/1.20.4/testWorld.zip).
+
 ## Intentions
 
 While this feature can be used to prevent harm, by detecting cheaters early, it is implemented improperly on some
