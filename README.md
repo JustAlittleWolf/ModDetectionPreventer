@@ -7,24 +7,23 @@
 <p style="text-align: center">A simple mod that prevents a security vulnerability allowing servers to detect which mods are installed on
 the client side.</p>
 
-
 ## The Vulnerability
 
 Minecraft has a feature that allows text (in chat, on signs, or in the bossbar) to be specified by a keybind the user
-has set. The Client will then replace the translation key of the keybind with the actual key that is used. This can
-be abused by the server by serving the client a sign, with such a keybind placeholder (for example Sodium:
+has set, or a translation key. The Client will then replace the translation key, or the keybind with the stored value.
+This can be abused by the server by serving the client a sign, with such a placeholder (for example Sodium:
 `sodium.option_impact.low`). By immediately closing the sign screen, the client sends the edited text to the server,
-without ever seeing a sign open screen. The server can then detect wether you have that
-specific mod installed, by checking if your client replaced the translation key with the keybind you have set
-(`sodium.option_impact.low -> Low`) . If you don't have Sodium installed, the translation key will stay there,
+without ever seeing a sign open screen. The server can then detect wether you have that specific mod installed, by
+checking if your client replaced the placeholder with the corresponding text (`sodium.option_impact.low -> Low`). If
+you don't have Sodium installed, the placeholder will stay there
 (`sodium.option_impact.low -> sodium.option_impact.low`).
 
-Obviously this only works for mods that have a keybind set, and also very few servers use this technique.
+This detection method works for any mod, that has custom translations.
 
 ## The Fix
 
-This mod fixes this issue, by simply not resolving any keybinds on signs, except vanilla ones. This makes it impossible
-for the server to use this method to detect installed mods.
+This mod fixes this issue, by simply not resolving any translation or keybind placeholders on signs, except vanilla
+ones. This makes it impossible for the server to use this method to detect installed mods.
 
 ## Intentions
 

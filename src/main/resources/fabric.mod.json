@@ -14,6 +14,11 @@
   "license": "MIT",
   "icon": "assets/moddetectionpreventer/icon.png",
   "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.wolfii.moddetectionpreventer.client.ModDetectionPreventerClient"
+    ]
+  },
   "mixins": [
     "moddetectionpreventer.mixins.json"
   ],
