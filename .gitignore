@@ -28,6 +28,7 @@ atlassian-ide-plugin.xml
 *.nar
 *.ear
 *.zip
+!testWorld.zip
 *.tar.gz
 *.rar
 
