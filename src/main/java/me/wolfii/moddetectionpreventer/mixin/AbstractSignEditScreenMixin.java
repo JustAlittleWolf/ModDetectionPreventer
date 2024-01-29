@@ -36,7 +36,7 @@ public class AbstractSignEditScreenMixin {
             if (TranslationFilter.isVanillaTranslation(translationKey)) {
                 filtered = MutableText.of(translatableTextContent);
             } else {
-                filtered = MutableText.of(new PlainTextContent.Literal(translationKey));
+                filtered = MutableText.of(new LiteralTextContent(translationKey));
             }
         }
         filtered.setStyle(message.getStyle());
