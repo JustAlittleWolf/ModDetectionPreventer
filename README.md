@@ -29,6 +29,7 @@ To verify this works you can test it in a [test world](https://github.com/JustAl
 
 ## Intentions
 
-While this feature can be used to prevent harm by detecting cheaters early, it is implemented improperly on some
+~~While this feature can be used to prevent harm by detecting cheaters early, it is implemented improperly on some
 servers, including [Cytooxien](CytooxienDetectedMods.md). Immediately banning players upon joining, simply because they
-have tweakeroo installed, is unacceptable.
+have tweakeroo installed, is unacceptable.~~
+After a discussion with the developer of Cytooxien, they told me that players won't get banned for using tweakeroo, only kicked repeatedly.
