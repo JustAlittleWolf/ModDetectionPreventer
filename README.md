@@ -7,6 +7,9 @@
 <p style="text-align: center">A simple mod that prevents a security vulnerability allowing servers to detect which mods are installed on
 the client side.</p>
 
+⚠️ Server-Admins have found a different way, to access Mod-Information. I am not motivated enough to work on this for
+now, so your client's mod list can be read even with this mod installed. ⚠️
+
 ## The Vulnerability
 
 Minecraft has a feature that allows text (in chat, on signs, or in the bossbar) to be specified by a keybind the user
