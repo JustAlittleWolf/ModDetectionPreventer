@@ -4,7 +4,9 @@
   "package": "me.wolfii.moddetectionpreventer.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
-    "AbstractSignEditScreenMixin"
+    "AbstractSignEditScreenMixin",
+    "AnvilEditScreenMixin",
+    "AnvilScreenHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

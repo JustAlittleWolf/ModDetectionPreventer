@@ -7,9 +7,6 @@
 <p style="text-align: center">A simple mod that prevents a security vulnerability allowing servers to detect which mods are installed on
 the client side.</p>
 
-⚠️ Server-Admins have found a different way, to access Mod-Information. I am not motivated enough to work on this for
-now, so your client's mod list can be read even with this mod installed. ⚠️
-
 ## The Vulnerability
 
 Minecraft has a feature that allows text (in chat, on signs, or in the bossbar) to be specified by a keybind the user
@@ -20,6 +17,10 @@ without ever seeing a sign open screen. The server can then detect wether you ha
 checking if your client replaced the placeholder with the corresponding text (`sodium.option_impact.low -> Low`). If
 you don't have Sodium installed, the placeholder will stay there
 (`sodium.option_impact.low -> sodium.option_impact.low`).
+
+This also works on the Anvil screen. The server could prompt you to open the anvil screen, with an item in the
+renaming slot that has a translation key as it's name. The client would then rename the item to the corresponding
+value and send an update to the server.
 
 This detection method works for any mod that has custom translations.
 
