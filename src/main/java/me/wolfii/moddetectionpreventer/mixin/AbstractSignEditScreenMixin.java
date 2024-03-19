@@ -15,6 +15,6 @@ public class AbstractSignEditScreenMixin {
 
     @Redirect(method = "<init>(Lnet/minecraft/block/entity/SignBlockEntity;ZZLnet/minecraft/text/Text;)V", at = @At(value = "INVOKE", target = "Ljava/util/stream/Stream;map(Ljava/util/function/Function;)Ljava/util/stream/Stream;"))
     private Stream<String> removeCustomKeybinds(Stream<Text> instance, Function<? super Text, ? extends Text> function) {
-        return instance.map(message -> filterKeybindsRecursive(message).getString());
+        return instance.map(message -> CombinedFilter.filterKeybindsRecursive(message).getString());
     }
 }

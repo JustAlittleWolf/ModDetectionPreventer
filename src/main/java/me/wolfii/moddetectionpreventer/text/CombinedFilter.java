@@ -10,7 +10,7 @@ public class CombinedFilter {
             if (KeybindFilter.isVanillaKeybinding(keybind)) {
                 filtered = MutableText.of(keybindTextContent);
             } else {
-                filtered = MutableText.of(new PlainTextContent.Literal(keybind));
+                filtered = MutableText.of(new LiteralTextContent(keybind));
             }
         }
         if (message.getContent() instanceof TranslatableTextContent translatableTextContent) {
@@ -18,7 +18,7 @@ public class CombinedFilter {
             if (TranslationFilter.isVanillaTranslation(translationKey)) {
                 filtered = MutableText.of(translatableTextContent);
             } else {
-                filtered = MutableText.of(new PlainTextContent.Literal(translationKey));
+                filtered = MutableText.of(new LiteralTextContent(translationKey));
             }
         }
         filtered.setStyle(message.getStyle());
